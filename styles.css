@@ -1,0 +1,210 @@
+body {
+    background-color: #FFFBF5;
+    color: black;
+    font-family: 'San Francisco', Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.header{
+        background-color: #C3ACD0;
+        color: black;
+        height: 10%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+}
+h4{
+    color: #7743DB;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90vh;
+    margin-top: 25px;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #C3ACD0;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #927c9e;
+}
+
+.submit-button {
+    background-color: #7743DB;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: hwb(261 17% 22%);
+    box-shadow: 0 26px 58px 0 rgba(0, 0, 0, .22), 0 5px 14px 0 rgba(0, 0, 0, .18);
+}
+
+.form-section {
+    display: none;
+    margin-bottom: 20px;
+}
+
+.form-section.active {
+    display: block;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input-container label,
+.input-container input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#sgpaForm, #cgpaForm, #sgpafromcgpaForm {
+    max-height: 600px;
+    width: 70%;
+    overflow-y: auto;
+    background-color: #F7EFE5;
+    border-radius: 20px;
+    padding: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #FFFBF5 #F7EFE5;
+}
+
+#sgpaForm::-webkit-scrollbar, #cgpaForm::-webkit-scrollbar, #sgpafromcgpaForm::-webkit-scrollbar {
+    width: 12px;
+}
+
+#sgpaForm::-webkit-scrollbar-track, #cgpaForm::-webkit-scrollbar-track,#sgpafromcgpaForm::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#sgpaForm::-webkit-scrollbar-thumb, #cgpaForm::-webkit-scrollbar-thumb, #sgpafromcgpaForm::-webkit-scrollbar-thumb {
+    background-color: #FFFBF5;
+    border-radius: 6px;
+    border: 2px solid #F7EFE5;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-container label {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #0f0f0f;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+.input-container input {
+    flex: 1;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #0f0f0f;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: black;
+}
+
+.input-container input[type="number"] {
+    width: 20px;
+}
+
+
+
+.modal, .modal2, .modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+    overflow: auto;
+    color: black;
+}
+
+.modal-content, .modal-content2, .modal-content3 {
+    background-image: linear-gradient(to bottom,
+    rgb(119, 67, 219),
+    rgb(195, 172, 208));
+
+
+    padding: 20px;
+    border: 1px solid #888;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    text-align: center;
+    animation-name: modal-animation;
+    animation-duration: 1s;
+    margin: 0 auto;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #C3ACD0;
+    color: black;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    margin-right: 10px;
+}
+
+.footer img {
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+}

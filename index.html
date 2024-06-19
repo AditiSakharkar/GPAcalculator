@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CGPA/SGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h2>SGPA/CGPA CALCULATOR</h2>
+    </header>
+    <div class="container">
+      <p>
+        This is a student made website made to calculate Semester SGPA/CGPA(sppu
+        university).
+      </p>
+      <div class="buttons">
+        <button class="button" onclick="showForm('sgpa')">
+          Calculate SGPA
+        </button>
+        <button class="button" onclick="showForm('cgpa')">
+          Calculate CGPA
+        </button>
+      </div>
+      <div id="sgpaForm" class="form-section">
+        <button class="button" onclick="showForm('sgpafromcgpa')">
+          Calculate SGPA from CGPA
+        </button>
+        <form id="sgpaCalcForm">
+          <h4>or</h4>
+          <p>Enter all subjects & Labs Credits</p>
+          <div>
+            <div class="input-container">
+              <label for="sub1-credits">Sub1: Credits</label>
+              <input
+                type="number"
+                id="sub1-credits"
+                name="sub1-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <label for="sub2-credits">Sub2: Credits</label>
+              <input
+                type="number"
+                id="sub2-credits"
+                name="sub2-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <label for="sub3-credits">Sub3: Credits</label>
+              <input
+                type="number"
+                id="sub3-credits"
+                name="sub3-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <label for="sub4-credits">Sub4: Credits</label>
+              <input
+                type="number"
+                id="sub4-credits"
+                name="sub4-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <label for="sub5-credits">Sub5: Credits</label>
+              <input
+                type="number"
+                id="sub5-credits"
+                name="sub5-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <label for="sub6-credits">Sub6: Credits</label>
+              <input
+                type="number"
+                id="sub6-credits"
+                name="sub6-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <label for="sub7-credits">Sub7: Credits</label>
+              <input
+                type="number"
+                id="sub7-credits"
+                name="sub7-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <label for="sub8-credits">Sub8: Credits</label>
+              <input
+                type="number"
+                id="sub8-credits"
+                name="sub8-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <label for="sub9-credits">Sub9: Credits</label>
+              <input
+                type="number"
+                id="sub9-credits"
+                name="sub9-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <label for="sub10-credits">Sub10: Credits</label>
+              <input
+                type="number"
+                id="sub10-credits"
+                name="sub10-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <label for="sub11-credits">Sub11: Credits</label>
+              <input
+                type="number"
+                id="sub11-credits"
+                name="sub11-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <label for="sub12-credits">Sub12: Credits</label>
+              <input
+                type="number"
+                id="sub12-credits"
+                name="sub12-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <label for="sub13-credits">Sub13: Credits</label>
+              <input
+                type="number"
+                id="sub13-credits"
+                name="sub13-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <label for="sub14-credits">Sub14: Credits</label>
+              <input
+                type="number"
+                id="sub14-credits"
+                name="sub14-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+
+            <div class="input-container">
+              <label for="sub15-credits">Sub15: Credits</label>
+              <input
+                type="number"
+                id="sub15-credits"
+                name="sub15-credits"
+                min="0"
+                max="10"
+              />
+            </div>
+            <br /><br />
+          </div>
+
+          <div class="input-container">
+            <label for="Total-credits">Total-credits</label>
+            <input
+              type="number"
+              id="Total-credits"
+              name="Total-credits"
+              min="0"
+              max="10"
+              placeholder="22"
+            />
+          </div>
+          <br /><br />
+
+          <button type="button" onclick="calculateSGPA()" class="submit-button">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div id="cgpaForm" class="form-section">
+        <p>Enter all known SGPA of Each Semester</p>
+        <form id="cgpaCalcForm">
+          <div class="input-container">
+            <label for="sem1-sgpa">Enter Semester 1 SGPA:</label>
+            <input
+              type="number"
+              id="sem1-sgpa"
+              name="sem1-sgpa"
+              min="0"
+              max="10"
+            />
+          </div>
+          <br /><br />
+
+          <div class="input-container">
+            <label for="sem2-sgpa">Enter Semester 2 SGPA:</label>
+            <input
+              type="number"
+              id="sem2-sgpa"
+              name="sem2-sgpa"
+              min="0"
+              max="10"
+            />
+          </div>
+          <br /><br />
+
+          <button type="button" onclick="calculateCGPA()" class="submit-button">
+            Submit
+          </button>
+        </form>
+      </div>
+
+      <div id="sgpafromcgpaForm" class="form-section">
+        <p>Enter known SGPA and CGPA</p>
+        <form id="sgpafromcgpaCalcForm">
+          <div class="input-container">
+            <label for="cgpa1">Enter CGPA:</label>
+            <input type="number" id="cgpa1" name="cgpa1" min="0" max="10" />
+          </div>
+          <br /><br />
+
+          <div class="input-container">
+            <label for="sgpa1">Enter SGPA:</label>
+            <input type="number" id="sgpa1" name="sgpa1" min="0" max="10" />
+          </div>
+          <br /><br />
+
+          <button
+            type="button"
+            onclick="calculateSGPAfromCGPA()"
+            class="submit-button"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Your SGPA is:</h2>
+        <p id="sgpaResult"></p>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal2">
+      <div class="modal-content2">
+        <span class="close" onclick="closeModal2()">&times;</span>
+        <h2>Your CGPA is:</h2>
+        <p id="cgpaResult"></p>
+      </div>
+    </div>
+    <div id="modal3" class="modal3">
+      <div class="modal-content3">
+        <span class="close" onclick="closeModal3()">&times;</span>
+        <h2>Your SGPA is:</h2>
+        <p id="sgpafromcgpaResult"></p>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Made by Aditi Sakharkar</p>
+      <a href="https://github.com/AditiSakharkar"
+        ><img src="github.png" alt="GitHub Icon"
+      /></a>
+      <a href="https://www.linkedin.com/in/aditi-sakharkar"
+        ><img src="linkedin.png" alt="Linkedin Icon"
+      /></a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
